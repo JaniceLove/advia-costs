@@ -9,16 +9,18 @@ using namespace std;
 
 double techTime()
 {
-	double hourlyCost = 20;
-	double timePerHour = 0.5; //approx. 20 minutes to run controls, enter data, get results
+	double hourlyCost = 23.38; // per CCM
+	double timePerHour = (1/3); //approx. 20 minutes to run controls, enter data, get results
 	double timeCost = hourlyCost * timePerHour; 
 	return timeCost; 
 }
 
 double machineCost()
 {
+	//depreciated value in terms of cost per sample
 	double price = 64355; //purchased in 2013 
-	double depreciation_per_year = (64355 / 10);
+	double years = 8; // from BCM intranet, property control
+	double depreciation_per_year = ( 64355 / years ); 
 	double daysUsed = 52 * 5; 
 	double testsPerDay = 10;
 

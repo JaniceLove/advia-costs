@@ -10,7 +10,7 @@
 
 using namespace std; 
 
-//Reagents, costs
+//Reagents, costs (year 2015, provided by Siemens company rep)
 double perox_timepac = 283.12; //3700 tests
 double sheathRinse = 66.87; //700 tests 
 
@@ -47,8 +47,12 @@ double cbc_price;
 double cbcRetic_price; 
 
 
+
 int main ()
 {
+	ofstream myFile;
+	myFile.open("AdviaPrices.txt");
+	
 	int aveTests = 10;
 	labor = techTime(); 
 	machine = machineCost();
@@ -78,12 +82,16 @@ int main ()
 
 	cbcRetic_price = cbc_price + reticControls + reticSoln;
 
-	cout << setprecision(4) << endl;
-	cout << "The price is: $ " << cbc_price << endl; 
-	cout << "The price of CBC and retic is: $" << cbcRetic_price << endl; 
-	system("pause"); 
+	myFile << setprecision(4) << endl;
+	myFile <<"Siemens Advia" << endl;
+	myFile << endl;
+	myFile << "CBC PRICES: " << endl;
+	myFile << "CBC: $ " << cbc_price << endl; 
+	myFile << "CBC + Reticulocyte count: $" << cbcRetic_price << endl; 
+	
 
 
+	myFile.close();
 
 	return 0;
 }
