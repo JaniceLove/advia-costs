@@ -2,5 +2,12 @@
 Siemens Advia
 
 CBC PRICES: 
-CBC: $ 9.655
-CBC + Reticulocyte count: $23.22
+CBC: $ 20.74
+CBC + Reticulocyte count: $ 25.16
+
+CBC (non-BCM): $25.93
+CBC + Retic count (non-BCM): $ 31.45
+
+CBC (non-academic): $ 31.11
+CBC + Retic count (non-academic): $ 37.75
+
