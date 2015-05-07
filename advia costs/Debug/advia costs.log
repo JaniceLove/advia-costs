@@ -1,10 +1,10 @@
-﻿Build started 4/30/2015 2:25:13 PM.
+﻿Build started 5/7/2015 11:33:58 AM.
      1>Project "C:\Users\jmlove\Documents\Visual Studio 2010\Projects\advia costs\advia costs\advia costs.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Creating "Debug\advia costs.unsuccessfulbuild" because "AlwaysCreate" was specified.
        ClCompile:
-         c:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\advia.cpp
-         advia.cpp
+         c:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\functions.cpp
+         functions.cpp
        Link:
          c:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\jmlove\Documents\Visual Studio 2010\Projects\advia costs\Debug\advia costs.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\advia costs.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\jmlove\Documents\Visual Studio 2010\Projects\advia costs\Debug\advia costs.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\jmlove\Documents\Visual Studio 2010\Projects\advia costs\Debug\advia costs.lib" /MACHINE:X86 Debug\advia.obj
          Debug\functions.obj
@@ -19,4 +19,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:00.85
+Time Elapsed 00:00:00.81
