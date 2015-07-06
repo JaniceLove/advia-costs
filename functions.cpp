@@ -23,19 +23,29 @@ double machineCost()
 	double price = 64355; //purchased in 2013 
 	double years = 8; // from BCM intranet, property control
 	double depreciation_per_year = ( 64355 / years ); 
-	double daysUsed = 52 * 5; 
+	double daysUsed = 365; 
 	double testsPerDay = 10;
 
 	double cost = depreciation_per_year / daysUsed / testsPerDay; 
 	return cost;
 } 
 
+double maintenance()
+{
+	double price = 10000; 
+	double days = 365; 
+	double ppday = price / days;
+	double testsPerDay = 10;
+	double cost = ppday / testsPerDay;
+	return cost;
+}
+
 double primerCost ()
 {
 	double price = 49.33;
 	double perVial = price / 25;
 	double perDay = perVial * (1/3);
-	double cost = perDay * 5;
+	double cost = perDay / 10;
 	return cost;
 }
 

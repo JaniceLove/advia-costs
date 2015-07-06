@@ -1,7 +1,7 @@
 //Program to calculate costs for Siemens Advia 120
 //Author: Janice Love
 //Date: 8/15/2014
-//Update: 1-27-2015
+//Update: 7-6-2015
 
 #include <iostream>
 #include <fstream>
@@ -9,11 +9,6 @@
 #include "functions.h" 
 
 using namespace std; 
-
-
-
-
-
 
 
 int main ()
@@ -24,6 +19,7 @@ int main ()
 	
 	double labor = techTime(); 
 	double machine = machineCost();
+	double contract = maintenance();
 	double primer = primerCost();
 
 	double ezWash = ezWashCost();
@@ -38,7 +34,7 @@ int main ()
 	double rbc = RBCtimepac();
 	double s = shealth_rinse();
 		
-	double cbc_price = labor + machine + primer + ezWash + controls 
+	double cbc_price = labor + machine + contract + primer + ezWash + controls 
 		+ d + wbc + rbc + s;
 
 	double cbc_retic_price = cbc_price + y + w + s + reticCONTROLS;

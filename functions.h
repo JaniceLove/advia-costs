@@ -3,6 +3,7 @@
 
 double techTime(); 
 double machineCost();
+double maintenance();
 double primerCost();
 
 double ezWashCost();
